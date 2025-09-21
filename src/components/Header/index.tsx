@@ -10,13 +10,16 @@ function Header() {
             setScrolled(window.scrollY > 50);
         };
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        
+        return () =>{
+            window.removeEventListener("scroll", handleScroll)
+        };
     }, []);
 
     return (
         <>
-            <div className={'header-container ${scrolled ? "scrolled" : ""}'} id='header-container'>
-                <a href=""><img className='logo-svg' src={logo} alt="" /></a>
+            <div className={`header-container ${scrolled ? "scrolled" : ""}`} id='header-container'>
+                <img className='logo-svg' src={logo} alt="rebloom-logo" />
                 <div className='header-menu'>
                     <ul>
                         <li><a href="">취향 발견</a></li>
@@ -26,8 +29,8 @@ function Header() {
                     </ul>
                 </div>
                 <div className="login-box">
-                    <button className='login-button' id='login-box_button'><a href="">Login</a></button>
-                    <button className='about-button' id='login-box_button'><a href="">About</a></button>
+                    <button className='login-button' id='login-box_button' >Login</button>
+                    <button className='about-button' id='login-box_button' >About</button>
                 </div>
             </div>
         </>
