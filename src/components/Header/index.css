@@ -11,6 +11,14 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+.header-container .scrolled{
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header-menu ul{
@@ -26,7 +34,7 @@
     font-size: 16px;
     color: #333;
     cursor: pointer;
-    position: relative; /* ::after 위치 기준 */
+    position: relative;
     transition: all 0.3s ease;
 }
 
@@ -67,16 +75,7 @@
     font-size: 14px;
     transition: background-color 0.3s ease;
 }
-.signup-button{
-    background-color: white;
-    color: #50b9ff;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease;
-}
-.menu-button{
+.about-button{
     background-color: white;
     color: #50b9ff;
     border: none;
@@ -97,8 +96,12 @@
     transform: scale(1.1);
 }
 
+#login-box_button a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo-svg{
-    width: 60px;
-    height: 60px;
+    width: 160px;
     margin: 0;
 }
