@@ -6,10 +6,10 @@ import './index.css';
 function MainPage() {
     return (
         <>
-            <div className="MainPage">
-                <div className="header"><Header /></div>
-                <div className="body"><Body /></div>
-            </div>
+            <header><Header /></header>
+            <body>
+                <Body />
+            </body>
         </>
     );
 }

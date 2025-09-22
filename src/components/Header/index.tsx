@@ -19,7 +19,7 @@ function Header() {
     return (
         <>
             <div className={`header-container ${scrolled ? "scrolled" : ""}`} id='header-container'>
-                <img className='logo-svg' src={logo} alt="rebloom-logo" />
+                <a href=""><img className='logo-svg' src={logo} alt="rebloom-logo" /></a>
                 <div className='header-menu'>
                     <ul>
                         <li><a href="">취향 발견</a></li>
