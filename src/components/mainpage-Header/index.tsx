@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import './index.css';
-import logo from '../../assets/Rebloom-logo.svg';
+import logo from '../../assets/images/Rebloom-logo.svg';
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
