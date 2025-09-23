@@ -1,5 +1,5 @@
-import Header from "../../components/Header";
-import Body from "../../components/MainP-Body";
+import Header from "../../components/mainpage-Header";
+import Body from "../../components/mainpage-Body";
 import './index.css';
 // import { BrowserRouter as Router,Route,Link} from "react-router-dom";
 
